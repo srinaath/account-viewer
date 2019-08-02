@@ -1,0 +1,19 @@
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@mixin chalk-bg ($height: 6px, $image: "chalk-divider-line.png") {
+  content: "";
+  background-image: url("../../static/images/chalk-dividers/#{$image}");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  height: $height;
+}

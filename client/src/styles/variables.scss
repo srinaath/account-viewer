@@ -1,0 +1,187 @@
+
+// colors
+$white                 : #fff;
+$gray-100              : #f8f9fa;
+$gray-200              : #F4F4F4;
+$gray-300              : #dee2e6;
+$gray-400              : #D0D1CD;
+$gray-500              : #adb5bd;
+$gray-550              : #9b9b9b;
+$gray-600              : #6c757d;
+$gray-700              : #495057;
+$gray-800              : #343a40;
+$gray-900              : #212529;
+$black                 : #000;
+
+$blue                  : #436EA2;
+$blue-light            : #00a8ff;
+$blue-dark             : #4d5db0;
+$indigo                : #9c88ff;
+$purple                : #8D5FB7;
+$purple-med            : #574150;
+$purple-dark           : #382934;
+$purple-light          : #998292;
+$pink                  : #E6BEDA;
+$red-light             : #E90000;
+$red                   : #E62710;
+$red-dark              : #981212;
+$orange                : #f0932b;
+$yellow                : #F0D067;
+$green                 : #0CCE6B;
+$green-light           : #4cd137;
+$teal                  : #7ed6df;
+$cyan                  : #22a6b3;
+
+$beige                 : #f3efe7;
+$beige-light           : #faf9f7;
+
+$brown-dark            : #574147;
+$brown-med             : #847173;
+$brown                 : #C1B2B2;
+$brown-light           : #E1DCD7;
+
+$primary               : $red;
+$secondary             : $white;
+$success               : $green;
+$info                  : $cyan;
+$warning               : $yellow;
+$danger                : $red-light;
+$light                 : $gray-100;
+$dark                  : $gray-800;
+
+$theme-dark-bg-color          : $purple-med;
+$theme-dark-color             : $white;
+
+$theme-light-bg-color         : $white;
+$theme-light-color            : $purple-med;
+$theme-light-content-bg-color : $gray-200;
+
+$navbar-light-color    : rgba($black, 1);
+$headings-color        : $black;
+
+// font
+$font-size-base        : 1rem;
+$font-size-xs-plus     : $font-size-base * 0.8125; // 13px
+$font-size-md          : $font-size-base * 1.125; // 18px
+$font-family-sans-serif: Brandon, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-weight-semibold  : 600;
+$font-weight-bold      : 700;
+$font-weight-black     : 900;
+
+$icomoon-font-path     : "../static/fonts/";
+
+// headings
+$h1-font-size          : $font-size-base;
+$h2-font-size          : $font-size-base * 1.5; // 24
+$h3-font-size          : $font-size-base * 1.25; // 20
+$h1-font-size-lg       : $font-size-base * 2; // 32
+$headings-font-weight  : $font-weight-black;
+
+// icons
+$icon-size-base        : 1.5rem;
+$icon-size-sm          : 1.125rem;
+$icon-size-xs          : $icon-size-base / 2;
+
+// other font sizes
+$font-size-small-label  : $font-size-xs-plus;
+$font-size-error-message: $font-size-xs-plus;
+
+// Type display classes
+$display1-size         : $font-size-base * 5.625; // 90
+
+// paddings / margins
+$spacer                : 1rem;
+$spacers               : (
+  25                   : ($spacer * 0.75), // 2.5, aka 12px.
+  5                    : ($spacer * 2),
+  6                    : ($spacer * 3),
+  7                    : ($spacer * 4)
+);
+$grid-gutter-width     : $spacer * 2;
+
+$sizes                 : (
+  60: 60%
+);
+
+$denim-background-size : 100px;
+
+// transitions / timing
+$transition-duration-short     : 0.2s;
+$transition-duration-medium    : 0.3s;
+$transition-duration-default   : 0.4s;
+$transition-duration-long      : 0.5s;
+$transition-duration-longest   : 0.7s;
+
+$transition-bezier             : cubic-bezier(0.15, 0.67, 0.35, 1);
+
+// buttons
+$input-btn-line-height   : 1.3;
+$input-btn-line-height-lg: 1.6;
+
+$input-btn-padding-y   : 0.5rem;
+$input-btn-padding-y-sm: 0.282rem;
+$input-btn-padding-y-lg: 0.75rem;
+
+$input-btn-padding-x   : 0.625rem;
+$input-btn-padding-x-sm: 0.5rem;
+$input-btn-padding-x-lg: 1rem;
+
+$btn-font-weight       : $font-weight-semibold;
+$btn-border-radius     : 2px;
+$btn-border-radius-lg  : 2px;
+$btn-border-radius-sm  : 2px;
+
+$btn-disabled-opacity  : 0.4;
+
+// links
+$link-color            : $white;
+$link-color-alt        : $purple-med;
+
+// headings
+$headings-margin-bottom: $spacer * 0.75;
+
+// field
+$input-line-height     : 1.13;
+
+// modal
+$modal-dialog-margin        : $spacer;
+$modal-content-border-width : 0;
+$modal-top-show             : 180px;
+$modal-top                  : -300px;
+$modal-top-tall             : -800px;
+
+// Border and Horizontal rules
+$border-dark-theme-color : $white;
+$border-light-theme-color: $gray-300;
+$hr-margin-y             : 0;
+
+// pagination
+$pagination-active-bg          : $purple-med;
+$pagination-active-border-color: $purple-med;
+$pagination-hover-border-color : $purple-med;
+
+// $grid-gutter-width: 2rem;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// );
+
+// $container-max-widths: (
+//   sm: 1400px
+// );
+
+// $navbar-padding-y: 0;
+// $navbar-padding-x: $spacer;
+
+// $navbar-toggler-padding-y:          .25rem !default;
+// $navbar-toggler-padding-x:          .75rem !default;
+// $navbar-toggler-font-size:          1rem;
+// $navbar-toggler-border-radius:      $btn-border-radius !default;
+
+@import "./vendor/bootstrap/functions";
+@import "./vendor/bootstrap/variables";
+@import "./vendor/bootstrap/mixins";

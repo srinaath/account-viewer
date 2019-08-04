@@ -10,7 +10,7 @@ export function loadAccountsSuccess (accounts: Account[]): any {
 export function loadAccounts (): any {
   return function (dispatch: any): void {
     dispatch(beginApiCall())
-    axios.get('http://localhost:8000/api/accounts')
+    axios.get('api/accounts')
     .then((accountsJson: any) => {
       const accounts: Account[] = accountsJson.data.map((account: any): Account => {
         return {

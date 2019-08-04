@@ -1,8 +1,10 @@
 const express  = require('express');
 const pg = require('pg');
 const path  = require('path')
+const cors = require('cors');
 const app  = express();
-const port = 3000
+app.use(cors());
+const port = 8000
 
 let client
 function initPostgres() {
@@ -18,7 +20,7 @@ function initPostgres() {
 }
 
 function getAccountsInfo(req, res) {
-  client.query('SELECT name,ownership, accountnumber, website, billingstreet from salesforce.Account', (err, dbRes) => {
+  client.query('SELECT * from salesforce.Account', (err, dbRes) => {
     if (dbRes) {
       res.status(200);
       res.json(dbRes.rows);
@@ -28,8 +30,8 @@ function getAccountsInfo(req, res) {
 };
 
 initPostgres()
-app.get('/api/accounts', getAccountsInfo);
 
+app.get('/api/accounts', getAccountsInfo);
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/public/index.html'));

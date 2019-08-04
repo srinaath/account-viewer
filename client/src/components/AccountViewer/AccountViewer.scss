@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.AccountViewer {
+  display: flex;
+  font-size: $font-size-md;
+  overflow: scroll;
+
+  &__block {
+    height: 50px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    background: $brown-dark;
+  }
+
+  .active {
+    background: $brown-light;
+  }
+}

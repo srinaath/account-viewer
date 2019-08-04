@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.MapsViewer {
+  display: flex;
+  height: 50vh;
+
+  &__map {
+    width: 100%;
+    height: 400px;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.AccountDetailsViewer {
+  display: flex;
+  height: 30vh;
+  font-size: $font-size-md;
+  overflow: scroll;
+
+  &__clickable {
+    background: $gray-400;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+  }
+}

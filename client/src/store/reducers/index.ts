@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import banner from './bannerReducer'
+import accounts from './accountReducer'
 
 const rootReducer: any = combineReducers({
-  banner
+  accounts
 })
 
 export default rootReducer

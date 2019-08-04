@@ -39,5 +39,5 @@ app.get('/', function(req, res) {
 
 app.use(express.static('public'));
 
-app.listen(port);
-console.log('Listening on port', port);
+app.listen(process.env.PORT);
+console.log('Listening on port', process.env.PORT);

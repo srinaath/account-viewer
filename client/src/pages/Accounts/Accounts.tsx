@@ -46,10 +46,10 @@ class Accounts extends React.Component<Props> {
   public render (): any {
     return (
       <div className="AccountsPage row">
-        <div className="col">
+        <div className="col-lg-6 col-xs-12">
           <AccountViewer accounts={this.props.accounts} onSelectAccount={this.onSelectAccount} selectedAccount={(this.state as any).selectedAccount}/>
         </div>
-        <div className="col">
+        <div className="col-lg-6 col-md-12">
           <AccountDetailsViewer accountDetails={(this.state as any).selectedAccount} onAddressClick={this.onAddressClick}/>
           <MapsViewer address={(this.state as any).selectedAddress}/>
         </div>
